@@ -1,0 +1,12 @@
+D:\.NET\Edu\TestingNET\EmployeeAPI\EmployeeAPI.Core\bin\Debug\net8.0\EmployeeAPI.Core.deps.json
+D:\.NET\Edu\TestingNET\EmployeeAPI\EmployeeAPI.Core\bin\Debug\net8.0\EmployeeAPI.Core.dll
+D:\.NET\Edu\TestingNET\EmployeeAPI\EmployeeAPI.Core\bin\Debug\net8.0\EmployeeAPI.Core.pdb
+D:\.NET\Edu\TestingNET\EmployeeAPI\EmployeeAPI.Core\obj\Debug\net8.0\EmployeeAPI.Core.csproj.AssemblyReference.cache
+D:\.NET\Edu\TestingNET\EmployeeAPI\EmployeeAPI.Core\obj\Debug\net8.0\EmployeeAPI.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\.NET\Edu\TestingNET\EmployeeAPI\EmployeeAPI.Core\obj\Debug\net8.0\EmployeeAPI.Core.AssemblyInfoInputs.cache
+D:\.NET\Edu\TestingNET\EmployeeAPI\EmployeeAPI.Core\obj\Debug\net8.0\EmployeeAPI.Core.AssemblyInfo.cs
+D:\.NET\Edu\TestingNET\EmployeeAPI\EmployeeAPI.Core\obj\Debug\net8.0\EmployeeAPI.Core.csproj.CoreCompileInputs.cache
+D:\.NET\Edu\TestingNET\EmployeeAPI\EmployeeAPI.Core\obj\Debug\net8.0\EmployeeAPI.Core.dll
+D:\.NET\Edu\TestingNET\EmployeeAPI\EmployeeAPI.Core\obj\Debug\net8.0\refint\EmployeeAPI.Core.dll
+D:\.NET\Edu\TestingNET\EmployeeAPI\EmployeeAPI.Core\obj\Debug\net8.0\EmployeeAPI.Core.pdb
+D:\.NET\Edu\TestingNET\EmployeeAPI\EmployeeAPI.Core\obj\Debug\net8.0\ref\EmployeeAPI.Core.dll
