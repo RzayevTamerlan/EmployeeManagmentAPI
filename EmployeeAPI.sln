@@ -4,7 +4,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeAPI.Core", "Employe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeAPI.DAL", "EmployeeAPI.DAL\EmployeeAPI.DAL.csproj", "{E59C0634-B24D-4AB2-8228-A0E13F54A502}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeAPI.Buisness", "EmployeeAPI.Buisness\EmployeeAPI.Buisness.csproj", "{09CB6252-0DDE-4AE5-A5B9-75795CDF6181}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeAPI.Business", "EmployeeAPI.Business\EmployeeAPI.Business.csproj", "{09CB6252-0DDE-4AE5-A5B9-75795CDF6181}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeAPI.API", "EmployeeAPI.API\EmployeeAPI.API.csproj", "{8EF91A1D-0F85-4775-8460-8ED18A9E7A5D}"
 EndProject

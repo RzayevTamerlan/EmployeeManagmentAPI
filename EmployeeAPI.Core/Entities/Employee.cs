@@ -10,4 +10,5 @@ public class Employee : IdentityUser
     public Position Position { get; set; }
     public Guid DepartmentId { get; set; }
     public Department Department { get; set; }
+    public List<Assignment> Assignments { get; set; }
 }

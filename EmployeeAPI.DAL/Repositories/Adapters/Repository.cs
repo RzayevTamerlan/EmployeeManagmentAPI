@@ -27,6 +27,30 @@ public class Repository<TEntity> : IRepository<TEntity> where TEntity : BaseEnti
         Table.Remove(entity);
     }
 
+    public IQueryable<TEntity> FindAllTracking(Expression<Func<TEntity, bool>> expression = null,
+        params string[] includes)
+    {
+        // Базовый запрос
+        IQueryable<TEntity> query = Table;
+
+        // Применяем связи из includes
+        foreach (var include in includes)
+        {
+            if (!string.IsNullOrWhiteSpace(include))
+            {
+                query = query.Include(include);
+            }
+        }
+
+        // Применяем фильтр, если он задан
+        if (expression != null)
+        {
+            query = query.Where(expression);
+        }
+
+        return query;
+    }
+
     public IQueryable<TEntity> FindAll(Expression<Func<TEntity, bool>> expression = null, params string[] includes)
     {
         // Базовый запрос
@@ -63,12 +87,20 @@ public class Repository<TEntity> : IRepository<TEntity> where TEntity : BaseEnti
         return query;
     }
 
-    public async Task<TEntity?> GetById(Guid id)
+    public async Task<TEntity?> GetById(Guid id, string[] includes)
     {
-        return await Table.AsNoTracking().FirstOrDefaultAsync(x=>x.Id == id);
+        IQueryable<TEntity> query = Table.AsNoTracking();
+
+        // Добавляем связи из includes
+        foreach (var include in includes)
+        {
+            query = query.Include(include);
+        }
+
+        return await query.AsNoTracking().FirstOrDefaultAsync(x => x.Id == id);
     }
 
-    public async Task<bool> IsExsist(Expression<Func<TEntity, bool>> expression)
+    public async Task<bool> IsExist(Expression<Func<TEntity, bool>> expression)
     {
         return await Table.AnyAsync(expression);
     }

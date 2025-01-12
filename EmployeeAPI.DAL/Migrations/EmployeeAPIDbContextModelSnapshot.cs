@@ -59,6 +59,9 @@ namespace EmployeeAPI.DAL.Migrations
                     b.Property<string>("EmployeeId1")
                         .HasColumnType("text");
 
+                    b.Property<bool>("IsCompleted")
+                        .HasColumnType("boolean");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("text");
@@ -399,7 +402,7 @@ namespace EmployeeAPI.DAL.Migrations
             modelBuilder.Entity("EmployeeAPI.Core.Entities.Assignment", b =>
                 {
                     b.HasOne("EmployeeAPI.Core.Entities.Employee", "Employee")
-                        .WithMany()
+                        .WithMany("Assignments")
                         .HasForeignKey("EmployeeId1");
 
                     b.HasOne("EmployeeAPI.Core.Entities.Topic", "Topic")
@@ -486,6 +489,11 @@ namespace EmployeeAPI.DAL.Migrations
             modelBuilder.Entity("EmployeeAPI.Core.Entities.Department", b =>
                 {
                     b.Navigation("Employees");
+                });
+
+            modelBuilder.Entity("EmployeeAPI.Core.Entities.Employee", b =>
+                {
+                    b.Navigation("Assignments");
                 });
 
             modelBuilder.Entity("EmployeeAPI.Core.Entities.Position", b =>

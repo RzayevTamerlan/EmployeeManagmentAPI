@@ -1,5 +1,5 @@
-﻿using EmployeeAPI.Buisness.DTOs.Employee;
-using EmployeeAPI.Buisness.Services.Ports;
+﻿using EmployeeAPI.Business.DTOs.Employee;
+using EmployeeAPI.Business.Services.Ports;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EmployeeAPI.API.Controllers;

@@ -27,6 +27,5 @@ public class TagConfiguration
                     .HasForeignKey("TagId")
                     .OnDelete(DeleteBehavior.Cascade));
 
-        // Дополнительные настройки, если они понадобятся
     }
 }

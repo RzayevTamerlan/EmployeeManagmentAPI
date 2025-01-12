@@ -1,5 +1,5 @@
 using System.Text;
-using EmployeeAPI.Buisness;
+using EmployeeAPI.Business;
 using EmployeeAPI.Core.Entities;
 using EmployeeAPI.DAL;
 using EmployeeAPI.DAL.Context;
@@ -13,6 +13,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddControllers();
 builder.Services.AddSwaggerGen();
+
 
 // 1. Настройка JWT
 var jwtSettings = builder.Configuration.GetSection("JwtSettings");

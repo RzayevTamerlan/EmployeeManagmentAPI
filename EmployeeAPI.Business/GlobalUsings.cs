@@ -1,0 +1,11 @@
+﻿global using System;
+global using System.Collections.Generic;
+global using System.Linq;
+global using System.Threading.Tasks;
+global using System.Text;
+global using Microsoft.Extensions.DependencyInjection;
+global using EmployeeAPI.DAL.Repositories.Ports;
+global using EmployeeAPI.Core.Entities;
+global using EmployeeAPI.Business.Services.Ports;
+global using EmployeeAPI.Business.Exceptions;
+global using AutoMapper;

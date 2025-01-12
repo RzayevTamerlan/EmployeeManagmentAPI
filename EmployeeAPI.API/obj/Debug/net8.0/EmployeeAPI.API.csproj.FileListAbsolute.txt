@@ -37,10 +37,8 @@ D:\.NET\Edu\TestingNET\EmployeeAPI\EmployeeAPI.API\bin\Debug\net8.0\Swashbuckle.
 D:\.NET\Edu\TestingNET\EmployeeAPI\EmployeeAPI.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\.NET\Edu\TestingNET\EmployeeAPI\EmployeeAPI.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 D:\.NET\Edu\TestingNET\EmployeeAPI\EmployeeAPI.API\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
-D:\.NET\Edu\TestingNET\EmployeeAPI\EmployeeAPI.API\bin\Debug\net8.0\EmployeeAPI.Buisness.dll
 D:\.NET\Edu\TestingNET\EmployeeAPI\EmployeeAPI.API\bin\Debug\net8.0\EmployeeAPI.Core.dll
 D:\.NET\Edu\TestingNET\EmployeeAPI\EmployeeAPI.API\bin\Debug\net8.0\EmployeeAPI.DAL.dll
-D:\.NET\Edu\TestingNET\EmployeeAPI\EmployeeAPI.API\bin\Debug\net8.0\EmployeeAPI.Buisness.pdb
 D:\.NET\Edu\TestingNET\EmployeeAPI\EmployeeAPI.API\bin\Debug\net8.0\EmployeeAPI.Core.pdb
 D:\.NET\Edu\TestingNET\EmployeeAPI\EmployeeAPI.API\bin\Debug\net8.0\EmployeeAPI.DAL.pdb
 D:\.NET\Edu\TestingNET\EmployeeAPI\EmployeeAPI.API\obj\Debug\net8.0\EmployeeAPI.API.csproj.AssemblyReference.cache
@@ -135,3 +133,6 @@ D:\.NET\Edu\TestingNET\EmployeeAPI\EmployeeAPI.API\bin\Debug\net8.0\zh-Hans\Micr
 D:\.NET\Edu\TestingNET\EmployeeAPI\EmployeeAPI.API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\.NET\Edu\TestingNET\EmployeeAPI\EmployeeAPI.API\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
 D:\.NET\Edu\TestingNET\EmployeeAPI\EmployeeAPI.API\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
+D:\.NET\Edu\TestingNET\EmployeeAPI\EmployeeAPI.API\obj\Debug\net8.0\EmployeeAPI.API.sourcelink.json
+D:\.NET\Edu\TestingNET\EmployeeAPI\EmployeeAPI.API\bin\Debug\net8.0\EmployeeAPI.Business.dll
+D:\.NET\Edu\TestingNET\EmployeeAPI\EmployeeAPI.API\bin\Debug\net8.0\EmployeeAPI.Business.pdb

@@ -15,3 +15,4 @@ D:\.NET\Edu\TestingNET\EmployeeAPI\EmployeeAPI.DAL\obj\Debug\net8.0\refint\Emplo
 D:\.NET\Edu\TestingNET\EmployeeAPI\EmployeeAPI.DAL\obj\Debug\net8.0\EmployeeAPI.DAL.pdb
 D:\.NET\Edu\TestingNET\EmployeeAPI\EmployeeAPI.DAL\obj\Debug\net8.0\EmployeeAPI.DAL.genruntimeconfig.cache
 D:\.NET\Edu\TestingNET\EmployeeAPI\EmployeeAPI.DAL\obj\Debug\net8.0\ref\EmployeeAPI.DAL.dll
+D:\.NET\Edu\TestingNET\EmployeeAPI\EmployeeAPI.DAL\obj\Debug\net8.0\EmployeeAPI.DAL.sourcelink.json

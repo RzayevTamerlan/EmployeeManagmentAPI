@@ -10,3 +10,4 @@ D:\.NET\Edu\TestingNET\EmployeeAPI\EmployeeAPI.Core\obj\Debug\net8.0\EmployeeAPI
 D:\.NET\Edu\TestingNET\EmployeeAPI\EmployeeAPI.Core\obj\Debug\net8.0\refint\EmployeeAPI.Core.dll
 D:\.NET\Edu\TestingNET\EmployeeAPI\EmployeeAPI.Core\obj\Debug\net8.0\EmployeeAPI.Core.pdb
 D:\.NET\Edu\TestingNET\EmployeeAPI\EmployeeAPI.Core\obj\Debug\net8.0\ref\EmployeeAPI.Core.dll
+D:\.NET\Edu\TestingNET\EmployeeAPI\EmployeeAPI.Core\obj\Debug\net8.0\EmployeeAPI.Core.sourcelink.json
