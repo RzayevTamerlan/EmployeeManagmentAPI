@@ -1386,19 +1386,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\sirda\\.nuget\\packages\\": {}
+    "C:\\Users\\tamer\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\.NET\\Edu\\TestingNET\\EmployeeAPI\\EmployeeAPI.Business\\EmployeeAPI.Business.csproj",
+      "projectUniqueName": "D:\\WebProgramming\\EmployeeManagmentAPI\\EmployeeAPI.Business\\EmployeeAPI.Business.csproj",
       "projectName": "EmployeeAPI.Business",
-      "projectPath": "D:\\.NET\\Edu\\TestingNET\\EmployeeAPI\\EmployeeAPI.Business\\EmployeeAPI.Business.csproj",
-      "packagesPath": "C:\\Users\\sirda\\.nuget\\packages\\",
-      "outputPath": "D:\\.NET\\Edu\\TestingNET\\EmployeeAPI\\EmployeeAPI.Business\\obj\\",
+      "projectPath": "D:\\WebProgramming\\EmployeeManagmentAPI\\EmployeeAPI.Business\\EmployeeAPI.Business.csproj",
+      "packagesPath": "C:\\Users\\tamer\\.nuget\\packages\\",
+      "outputPath": "D:\\WebProgramming\\EmployeeManagmentAPI\\EmployeeAPI.Business\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\sirda\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\tamer\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -1410,8 +1410,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\.NET\\Edu\\TestingNET\\EmployeeAPI\\EmployeeAPI.DAL\\EmployeeAPI.DAL.csproj": {
-              "projectPath": "D:\\.NET\\Edu\\TestingNET\\EmployeeAPI\\EmployeeAPI.DAL\\EmployeeAPI.DAL.csproj"
+            "D:\\WebProgramming\\EmployeeManagmentAPI\\EmployeeAPI.DAL\\EmployeeAPI.DAL.csproj": {
+              "projectPath": "D:\\WebProgramming\\EmployeeManagmentAPI\\EmployeeAPI.DAL\\EmployeeAPI.DAL.csproj"
             }
           }
         }
@@ -1424,7 +1424,7 @@
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
-        "auditMode": "all"
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -1468,7 +1468,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

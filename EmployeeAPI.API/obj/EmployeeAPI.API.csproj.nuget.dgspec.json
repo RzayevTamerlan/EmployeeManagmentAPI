@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\.NET\\Edu\\TestingNET\\EmployeeAPI\\EmployeeAPI.API\\EmployeeAPI.API.csproj": {}
+    "D:\\WebProgramming\\EmployeeManagmentAPI\\EmployeeAPI.API\\EmployeeAPI.API.csproj": {}
   },
   "projects": {
-    "D:\\.NET\\Edu\\TestingNET\\EmployeeAPI\\EmployeeAPI.API\\EmployeeAPI.API.csproj": {
+    "D:\\WebProgramming\\EmployeeManagmentAPI\\EmployeeAPI.API\\EmployeeAPI.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\.NET\\Edu\\TestingNET\\EmployeeAPI\\EmployeeAPI.API\\EmployeeAPI.API.csproj",
+        "projectUniqueName": "D:\\WebProgramming\\EmployeeManagmentAPI\\EmployeeAPI.API\\EmployeeAPI.API.csproj",
         "projectName": "EmployeeAPI.API",
-        "projectPath": "D:\\.NET\\Edu\\TestingNET\\EmployeeAPI\\EmployeeAPI.API\\EmployeeAPI.API.csproj",
-        "packagesPath": "C:\\Users\\sirda\\.nuget\\packages\\",
-        "outputPath": "D:\\.NET\\Edu\\TestingNET\\EmployeeAPI\\EmployeeAPI.API\\obj\\",
+        "projectPath": "D:\\WebProgramming\\EmployeeManagmentAPI\\EmployeeAPI.API\\EmployeeAPI.API.csproj",
+        "packagesPath": "C:\\Users\\tamer\\.nuget\\packages\\",
+        "outputPath": "D:\\WebProgramming\\EmployeeManagmentAPI\\EmployeeAPI.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\sirda\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\tamer\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -26,8 +26,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\.NET\\Edu\\TestingNET\\EmployeeAPI\\EmployeeAPI.Business\\EmployeeAPI.Business.csproj": {
-                "projectPath": "D:\\.NET\\Edu\\TestingNET\\EmployeeAPI\\EmployeeAPI.Business\\EmployeeAPI.Business.csproj"
+              "D:\\WebProgramming\\EmployeeManagmentAPI\\EmployeeAPI.Business\\EmployeeAPI.Business.csproj": {
+                "projectPath": "D:\\WebProgramming\\EmployeeManagmentAPI\\EmployeeAPI.Business\\EmployeeAPI.Business.csproj"
               }
             }
           }
@@ -40,7 +40,7 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -56,6 +56,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.11, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -85,21 +89,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\.NET\\Edu\\TestingNET\\EmployeeAPI\\EmployeeAPI.Business\\EmployeeAPI.Business.csproj": {
+    "D:\\WebProgramming\\EmployeeManagmentAPI\\EmployeeAPI.Business\\EmployeeAPI.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\.NET\\Edu\\TestingNET\\EmployeeAPI\\EmployeeAPI.Business\\EmployeeAPI.Business.csproj",
+        "projectUniqueName": "D:\\WebProgramming\\EmployeeManagmentAPI\\EmployeeAPI.Business\\EmployeeAPI.Business.csproj",
         "projectName": "EmployeeAPI.Business",
-        "projectPath": "D:\\.NET\\Edu\\TestingNET\\EmployeeAPI\\EmployeeAPI.Business\\EmployeeAPI.Business.csproj",
-        "packagesPath": "C:\\Users\\sirda\\.nuget\\packages\\",
-        "outputPath": "D:\\.NET\\Edu\\TestingNET\\EmployeeAPI\\EmployeeAPI.Business\\obj\\",
+        "projectPath": "D:\\WebProgramming\\EmployeeManagmentAPI\\EmployeeAPI.Business\\EmployeeAPI.Business.csproj",
+        "packagesPath": "C:\\Users\\tamer\\.nuget\\packages\\",
+        "outputPath": "D:\\WebProgramming\\EmployeeManagmentAPI\\EmployeeAPI.Business\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\sirda\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\tamer\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -111,8 +115,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\.NET\\Edu\\TestingNET\\EmployeeAPI\\EmployeeAPI.DAL\\EmployeeAPI.DAL.csproj": {
-                "projectPath": "D:\\.NET\\Edu\\TestingNET\\EmployeeAPI\\EmployeeAPI.DAL\\EmployeeAPI.DAL.csproj"
+              "D:\\WebProgramming\\EmployeeManagmentAPI\\EmployeeAPI.DAL\\EmployeeAPI.DAL.csproj": {
+                "projectPath": "D:\\WebProgramming\\EmployeeManagmentAPI\\EmployeeAPI.DAL\\EmployeeAPI.DAL.csproj"
               }
             }
           }
@@ -125,7 +129,7 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -169,21 +173,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\.NET\\Edu\\TestingNET\\EmployeeAPI\\EmployeeAPI.Core\\EmployeeAPI.Core.csproj": {
+    "D:\\WebProgramming\\EmployeeManagmentAPI\\EmployeeAPI.Core\\EmployeeAPI.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\.NET\\Edu\\TestingNET\\EmployeeAPI\\EmployeeAPI.Core\\EmployeeAPI.Core.csproj",
+        "projectUniqueName": "D:\\WebProgramming\\EmployeeManagmentAPI\\EmployeeAPI.Core\\EmployeeAPI.Core.csproj",
         "projectName": "EmployeeAPI.Core",
-        "projectPath": "D:\\.NET\\Edu\\TestingNET\\EmployeeAPI\\EmployeeAPI.Core\\EmployeeAPI.Core.csproj",
-        "packagesPath": "C:\\Users\\sirda\\.nuget\\packages\\",
-        "outputPath": "D:\\.NET\\Edu\\TestingNET\\EmployeeAPI\\EmployeeAPI.Core\\obj\\",
+        "projectPath": "D:\\WebProgramming\\EmployeeManagmentAPI\\EmployeeAPI.Core\\EmployeeAPI.Core.csproj",
+        "packagesPath": "C:\\Users\\tamer\\.nuget\\packages\\",
+        "outputPath": "D:\\WebProgramming\\EmployeeManagmentAPI\\EmployeeAPI.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\sirda\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\tamer\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -205,7 +209,7 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -233,21 +237,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\.NET\\Edu\\TestingNET\\EmployeeAPI\\EmployeeAPI.DAL\\EmployeeAPI.DAL.csproj": {
+    "D:\\WebProgramming\\EmployeeManagmentAPI\\EmployeeAPI.DAL\\EmployeeAPI.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\.NET\\Edu\\TestingNET\\EmployeeAPI\\EmployeeAPI.DAL\\EmployeeAPI.DAL.csproj",
+        "projectUniqueName": "D:\\WebProgramming\\EmployeeManagmentAPI\\EmployeeAPI.DAL\\EmployeeAPI.DAL.csproj",
         "projectName": "EmployeeAPI.DAL",
-        "projectPath": "D:\\.NET\\Edu\\TestingNET\\EmployeeAPI\\EmployeeAPI.DAL\\EmployeeAPI.DAL.csproj",
-        "packagesPath": "C:\\Users\\sirda\\.nuget\\packages\\",
-        "outputPath": "D:\\.NET\\Edu\\TestingNET\\EmployeeAPI\\EmployeeAPI.DAL\\obj\\",
+        "projectPath": "D:\\WebProgramming\\EmployeeManagmentAPI\\EmployeeAPI.DAL\\EmployeeAPI.DAL.csproj",
+        "packagesPath": "C:\\Users\\tamer\\.nuget\\packages\\",
+        "outputPath": "D:\\WebProgramming\\EmployeeManagmentAPI\\EmployeeAPI.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\sirda\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\tamer\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -259,8 +263,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\.NET\\Edu\\TestingNET\\EmployeeAPI\\EmployeeAPI.Core\\EmployeeAPI.Core.csproj": {
-                "projectPath": "D:\\.NET\\Edu\\TestingNET\\EmployeeAPI\\EmployeeAPI.Core\\EmployeeAPI.Core.csproj"
+              "D:\\WebProgramming\\EmployeeManagmentAPI\\EmployeeAPI.Core\\EmployeeAPI.Core.csproj": {
+                "projectPath": "D:\\WebProgramming\\EmployeeManagmentAPI\\EmployeeAPI.Core\\EmployeeAPI.Core.csproj"
               }
             }
           }
@@ -273,7 +277,7 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -315,7 +319,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

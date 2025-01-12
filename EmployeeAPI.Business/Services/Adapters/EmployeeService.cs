@@ -1,10 +1,13 @@
-﻿using EmployeeAPI.Business.DTOs.Employee;
+﻿using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using EmployeeAPI.Business.DTOs.Employee;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 namespace EmployeeAPI.Business.Services.Adapters;
 
-public class EmployeeService(UserManager<Employee> userManager, IMapper mapper) : IEmployeeService
+public class EmployeeService(UserManager<Employee> userManager, IMapper mapper, IHttpContextAccessor httpContextAccessor) : IEmployeeService
 {
     public async Task Update(UpdateEmployeeDto dto)
     {
@@ -50,8 +53,7 @@ public class EmployeeService(UserManager<Employee> userManager, IMapper mapper) 
             Surname = employee.Surname,
             UserName = employee.UserName,
             Email = employee.Email,
-            PositionId = employee.PositionId,
-            DepartmentId = employee.DepartmentId,
+            PositionId = employee.PositionId ?? Guid.Empty, // Значение по умолчаниюpty, 
             PositionName = employee.Position.Name, // Навигационное свойство
             DepartmentName = employee.Department.Name // Навигационное свойство
         }).ToList();
@@ -106,12 +108,34 @@ public class EmployeeService(UserManager<Employee> userManager, IMapper mapper) 
             Surname = employee.Surname,
             UserName = employee.UserName,
             Email = employee.Email,
-            PositionId = employee.PositionId,
-            DepartmentId = employee.DepartmentId,
+            PositionId = employee.PositionId ?? Guid.Empty,
+            DepartmentId = employee.DepartmentId ?? Guid.Empty,
             PositionName = employee.Position.Name, // Навигационное свойство
             DepartmentName = employee.Department.Name // Навигационное свойство
         };
 
         return employeeDto;
+    }
+
+    public async Task<GetEmployeeDto> GetMe()
+    {
+        var emailClaim = httpContextAccessor?.HttpContext?.User?.FindFirst(ClaimTypes.Email)?.Value;
+        
+        if (emailClaim == null)
+        {
+            throw new BaseHttpException("Unauthorized", 401);
+        }
+        
+        var employee = await userManager.Users
+            .Include(e => e.Position)
+            .Include(e => e.Department)
+            .FirstOrDefaultAsync(e => e.Email == emailClaim);
+        
+        if(employee == null)
+        {
+            throw new BaseHttpException("Employee not found", 404);
+        }
+        
+        return mapper.Map<GetEmployeeDto>(employee);
     }
 }

@@ -1,11 +1,12 @@
 ﻿using EmployeeAPI.Business.DTOs.Employee;
 using EmployeeAPI.Business.Services.Ports;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EmployeeAPI.API.Controllers;
 
 [ApiController]
-[Route("api/[controller]")]
+[Route("api/employees")]
 public class EmployeeController(IEmployeeService employeeService) : ControllerBase
 {
     [HttpGet("{id}")]
@@ -34,6 +35,14 @@ public class EmployeeController(IEmployeeService employeeService) : ControllerBa
     {
         await employeeService.Update(dto);
         return NoContent();
+    }
+    
+    [HttpGet("me")]
+    [Authorize(AuthenticationSchemes = "Bearer")]
+    public async Task<IActionResult> GetMe()
+    {
+        var employee = await employeeService.GetMe();
+        return Ok(employee);
     }
 
 }

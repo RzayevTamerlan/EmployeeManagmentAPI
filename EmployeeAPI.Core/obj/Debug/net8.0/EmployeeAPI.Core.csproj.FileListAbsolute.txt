@@ -11,3 +11,16 @@ D:\.NET\Edu\TestingNET\EmployeeAPI\EmployeeAPI.Core\obj\Debug\net8.0\refint\Empl
 D:\.NET\Edu\TestingNET\EmployeeAPI\EmployeeAPI.Core\obj\Debug\net8.0\EmployeeAPI.Core.pdb
 D:\.NET\Edu\TestingNET\EmployeeAPI\EmployeeAPI.Core\obj\Debug\net8.0\ref\EmployeeAPI.Core.dll
 D:\.NET\Edu\TestingNET\EmployeeAPI\EmployeeAPI.Core\obj\Debug\net8.0\EmployeeAPI.Core.sourcelink.json
+D:\WebProgramming\EmployeeManagmentAPI\EmployeeAPI.Core\bin\Debug\net8.0\EmployeeAPI.Core.deps.json
+D:\WebProgramming\EmployeeManagmentAPI\EmployeeAPI.Core\bin\Debug\net8.0\EmployeeAPI.Core.dll
+D:\WebProgramming\EmployeeManagmentAPI\EmployeeAPI.Core\bin\Debug\net8.0\EmployeeAPI.Core.pdb
+D:\WebProgramming\EmployeeManagmentAPI\EmployeeAPI.Core\obj\Debug\net8.0\EmployeeAPI.Core.csproj.AssemblyReference.cache
+D:\WebProgramming\EmployeeManagmentAPI\EmployeeAPI.Core\obj\Debug\net8.0\EmployeeAPI.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\WebProgramming\EmployeeManagmentAPI\EmployeeAPI.Core\obj\Debug\net8.0\EmployeeAPI.Core.AssemblyInfoInputs.cache
+D:\WebProgramming\EmployeeManagmentAPI\EmployeeAPI.Core\obj\Debug\net8.0\EmployeeAPI.Core.AssemblyInfo.cs
+D:\WebProgramming\EmployeeManagmentAPI\EmployeeAPI.Core\obj\Debug\net8.0\EmployeeAPI.Core.csproj.CoreCompileInputs.cache
+D:\WebProgramming\EmployeeManagmentAPI\EmployeeAPI.Core\obj\Debug\net8.0\EmployeeAPI.Core.sourcelink.json
+D:\WebProgramming\EmployeeManagmentAPI\EmployeeAPI.Core\obj\Debug\net8.0\EmployeeAPI.Core.dll
+D:\WebProgramming\EmployeeManagmentAPI\EmployeeAPI.Core\obj\Debug\net8.0\refint\EmployeeAPI.Core.dll
+D:\WebProgramming\EmployeeManagmentAPI\EmployeeAPI.Core\obj\Debug\net8.0\EmployeeAPI.Core.pdb
+D:\WebProgramming\EmployeeManagmentAPI\EmployeeAPI.Core\obj\Debug\net8.0\ref\EmployeeAPI.Core.dll

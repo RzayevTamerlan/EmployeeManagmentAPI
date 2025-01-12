@@ -8,4 +8,5 @@ public interface IEmployeeService
     Task Update(UpdateEmployeeDto dto);
     List<GetEmployeeDto> GetAll(params string[] includes);
     Task Delete(Guid id);
+    Task<GetEmployeeDto> GetMe();
 }

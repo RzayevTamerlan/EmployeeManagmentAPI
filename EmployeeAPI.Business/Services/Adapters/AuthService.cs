@@ -67,7 +67,7 @@ public class AuthService(UserManager<Employee> userManager, IMapper mapper, ICon
     private string GenerateJwtToken(Employee employee)
     {
         // Секретный ключ из конфигурации
-        var secretKey = configuration["Jwt:Secret"];
+        var secretKey = configuration["JwtSettings:Secret"];
         var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey!));
         var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
@@ -82,8 +82,8 @@ public class AuthService(UserManager<Employee> userManager, IMapper mapper, ICon
 
         // Создаем токен
         var token = new JwtSecurityToken(
-            issuer: configuration["Jwt:Issuer"],
-            audience: configuration["Jwt:Audience"],
+            issuer: configuration["JwtSettings:Issuer"],
+            audience: configuration["JwtSettings:Audience"],
             claims: claims,
             expires: DateTime.UtcNow.AddHours(3), // Время жизни токена
             signingCredentials: creds
