@@ -272,3 +272,7 @@ D:\WebProgramming\EmployeeManagmentAPI\EmployeeAPI.API\obj\Debug\net8.0\Employee
 D:\WebProgramming\EmployeeManagmentAPI\EmployeeAPI.API\obj\Debug\net8.0\EmployeeAPI.API.genruntimeconfig.cache
 D:\WebProgramming\EmployeeManagmentAPI\EmployeeAPI.API\obj\Debug\net8.0\ref\EmployeeAPI.API.dll
 D:\WebProgramming\EmployeeManagmentAPI\EmployeeAPI.API\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\WebProgramming\EmployeeManagmentAPI\EmployeeAPI.API\bin\Debug\net8.0\EmployeeAPI.API.staticwebassets.endpoints.json
+D:\WebProgramming\EmployeeManagmentAPI\EmployeeAPI.API\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\WebProgramming\EmployeeManagmentAPI\EmployeeAPI.API\obj\Debug\net8.0\staticwebassets\msbuild.EmployeeAPI.API.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+D:\WebProgramming\EmployeeManagmentAPI\EmployeeAPI.API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

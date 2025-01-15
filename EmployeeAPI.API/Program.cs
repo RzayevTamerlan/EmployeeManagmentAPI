@@ -17,6 +17,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddHttpContextAccessor();
+
 builder.Services.AddControllers()
     .AddJsonOptions(options =>
     {
@@ -158,7 +159,6 @@ app.MapControllers();
 // Configure the HTTP request pipeline.
 app.UseAuthentication();
 app.UseAuthorization();
-
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

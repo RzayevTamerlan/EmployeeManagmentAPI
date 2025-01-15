@@ -9,7 +9,7 @@ using Microsoft.IdentityModel.Tokens;
 
 namespace EmployeeAPI.Business.Services.Adapters;
 
-public class AuthService(UserManager<Employee> userManager, IMapper mapper, IConfiguration configuration)
+public class AuthService(UserManager<Employee> userManager, IMapper mapper, RoleManager<IdentityRole> roleManager, IConfiguration configuration)
     : IAuthService
 {
     public async Task<CreateEmployeeDto> RegisterAsync(CreateEmployeeDto dto)
@@ -55,8 +55,10 @@ public class AuthService(UserManager<Employee> userManager, IMapper mapper, ICon
             throw new BaseHttpException("Invalid password", 400);
         }
 
+        var roles = await userManager.GetRolesAsync(employee);
+
         // Создаем JWT токен
-        var token = GenerateJwtToken(employee);
+        var token = GenerateJwtToken(employee, roles);
 
         return new LoginResponseDto()
         {
@@ -64,21 +66,20 @@ public class AuthService(UserManager<Employee> userManager, IMapper mapper, ICon
         };
     }
     
-    private string GenerateJwtToken(Employee employee)
+    private string GenerateJwtToken(Employee employee, IList<string> roles)
     {
-        // Секретный ключ из конфигурации
         var secretKey = configuration["JwtSettings:Secret"];
         var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey!));
         var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
-        // Устанавливаем claims
-        var claims = new[]
+        var claims = new List<Claim>
         {
             new Claim(JwtRegisteredClaimNames.Sub, employee.Id),
             new Claim(JwtRegisteredClaimNames.Email, employee.Email),
-            new Claim("role", "Employee"),
             new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
         };
+
+        claims.AddRange(roles.Select(role => new Claim(ClaimTypes.Role, role)));
 
         // Создаем токен
         var token = new JwtSecurityToken(

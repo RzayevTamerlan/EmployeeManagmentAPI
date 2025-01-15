@@ -12,6 +12,9 @@ public class PositionConfiguration : IEntityTypeConfiguration<Position>
             .IsRequired()
             .HasMaxLength(50);
         
+        builder.HasIndex(d => d.Name)
+            .IsUnique();
+        
         // Настройка отношения "один-ко-многим"
         builder.HasMany(d => d.Employees) // Position имеет много Employee
             .WithOne(e => e.Position)   // Каждый Employee связан с одним Position
